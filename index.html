@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@517&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section>
+      <video loop autoplay>
+        <source src="/video/Chain - 25380.mp4" type="video/mp4" />
+      </video>
+      <div class="title">
+        <h1>
+          I am<br />
+          Andi Bregovina
+        </h1>
+      </div>
+
+      <div onclick="portfolioclick()" class="arrows left">
+        <a>PORTFOLIO</a>
+      </div>
+      <div onclick="skillsclick()" class="arrows bottom"><a>SKILLS</a></div>
+      <div onclick="aboutclick()" class="arrows right"><a>ABOUT</a></div>
+      <div onclick="contactclick()" class="arrows top"><a>CONTACT</a></div>
+    </section>
+    <div class="portfolio-div">
+      <div class="button-close">
+        <div onclick="exitportfolio()" class="arrow-place">
+          <img src="/photos/left_arrow.png" />
+        </div>
+      </div>
+    </div>
+    <div class="skills-div"><div class="button-close">
+        <div onclick="exitskills()" class="arrow-place">
+          <img src="/photos/up_arrow.png" />
+        </div>
+      </div></div>
+    <div class="about-div"><div class="button-close">
+        <div onclick="exitabout()" class="arrow-place">
+          <img src="/photos/right_arrow.png" />
+        </div>
+      </div></div>
+    <div class="contact-div"><div class="button-close">
+        <div onclick="exitcontact()" class="arrow-place">
+          <img src="/photos/down_arrow.png" />
+        </div>
+      </div></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

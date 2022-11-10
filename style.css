@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  position: relative;
+  transform: translate(0, -50%);
+}
+h1 {
+  font-weight: 900;
+  font-size: 120px;
+  color: white;
+  width: auto;
+  line-height: 1;
+  position: relative;
+  text-align: center;
+}
+video {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+
+  object-fit: cover;
+  z-index: -99;
+  filter: brightness(40%);
+}
+a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 10px;
+  transition: 0.2s;
+}
+a:hover {
+  color: #737373;
+}
+.arrows {
+  color: white;
+  position: absolute;
+  font-size: 20px;
+}
+
+.left {
+  width: 70px;
+  top: 480px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: rotate(-90deg);
+}
+.bottom {
+  width: 100%;
+  height: 70px;
+  top: 900px;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  width: 70px;
+  top: 480px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+.top {
+  width: 100%;
+  height: 70px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PORTFOLIO DIV STYLE */
+.portfolio-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 300;
+  width: 100%;
+  height: 980px;
+  transition: all ease-in 0.5s;
+  transform: translateX(-1920px);
+  display: flex;
+}
+.portfolio-div.active-portfolio {
+  transform: translateX(0);
+}
+
+.button-close {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: end;
+}
+.button-close .arrow-place {
+  width: 50px;
+  height: 50px;
+  margin: 50px 50px;
+}
+
+/* PORTFOLIO DIV STYLE */
+
+/* SKILLS DIV STYLE */
+.skills-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 300;
+  width: 100%;
+  height: 980px;
+  transition: all ease-in 0.5s;
+  transform: translateY(980px);
+}
+.skills-div.active-skills {
+  transform: translateX(0);
+}
+
+/* SKILLS DIV STYLE */
+
+/* ABOUT DIV STYLE */
+.about-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 300;
+  width: 100%;
+  height: 980px;
+  transition: all ease-in 0.5s;
+  transform: translateX(1920px);
+}
+.about-div.active-about {
+  transform: translateX(0);
+}
+
+/* ABOUT DIV STYLE */
+
+/* CONTACT DIV STYLE */
+.contact-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 300;
+  width: 100%;
+  height: 980px;
+  transition: all ease-in 0.5s;
+  transform: translateY(-980px);
+}
+.contact-div.active-contact {
+  transform: translateX(0);
+}
+
+/* CONTACT DIV STYLE */
