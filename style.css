@@ -108,6 +108,7 @@ a:hover {
   transition: all ease-in 0.5s;
   transform: translateX(-1920px);
   display: flex;
+  flex-direction: column;
 }
 .portfolio-div.active-portfolio {
   transform: translateX(0);
@@ -115,7 +116,7 @@ a:hover {
 
 .button-close {
   width: 100%;
-  height: 150px;
+  height: 130px;
   display: flex;
   justify-content: end;
 }
@@ -180,3 +181,116 @@ a:hover {
 }
 
 /* CONTACT DIV STYLE */
+
+.inside-portfolio {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inside-portfolio .head {
+  width: 200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inside-portfolio .head h1 {
+  width: 250px;
+  height: 60px;
+  font-size: 40px;
+  border-bottom: 3px solid white;
+  left: 0;
+}
+.inside-portfolio span {
+  color: #f6583b;
+  font-weight: 700;
+  font-size: 17px;
+  position: relative;
+  top: -12px;
+  left: 67px;
+  background: black;
+  padding: 0 25px;
+}
+
+.row-items {
+  width: 100%;
+  height: 900px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: -140px;
+  grid-template-columns: 300px 300px 300px;
+  align-content: center;
+  gap: 60px;
+}
+.row-items .item {
+  height: 250px;
+  background: white;
+}
+
+.portfolio-div a {
+  width: 150px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  background: #f6583b;
+  color: white;
+  position: relative;
+  left: 880px;
+  top: -120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0;
+}
+.div {
+  opacity: 0;
+  transition: all 2s;
+  transform: translateX(-50px);
+}
+.div.activediv {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.row {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+.row .contact-form {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: end;
+}
+.row .map {
+  width: 100%;
+  height: 500px;
+}
+.mapouter {
+  margin-left: 100px;
+}
+.form {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30px;
+}
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
