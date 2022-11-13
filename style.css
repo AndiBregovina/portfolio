@@ -1,0 +1,345 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  position: relative;
+  transform: translate(0, -50%);
+}
+h1 {
+  font-weight: 900;
+  font-size: 120px;
+  color: white;
+  width: auto;
+  line-height: 1;
+  position: relative;
+  text-align: center;
+}
+video {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+
+  object-fit: cover;
+  z-index: -99;
+  filter: brightness(40%);
+}
+a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 10px;
+  transition: 0.2s;
+}
+a:hover {
+  color: #737373;
+}
+.arrows {
+  color: white;
+  position: absolute;
+  font-size: 20px;
+}
+
+.left {
+  width: 70px;
+  top: 480px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: rotate(-90deg);
+}
+.bottom {
+  width: 100%;
+  height: 70px;
+  top: 900px;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  width: 70px;
+  top: 480px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+.top {
+  width: 100%;
+  height: 70px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PORTFOLIO DIV STYLE */
+.portfolio-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 300;
+  width: 100%;
+  height: 980px;
+  transition: all ease-in 0.5s;
+  transform: translateX(-1920px);
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-div.active-portfolio {
+  transform: translateX(0);
+}
+
+.button-close {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: end;
+}
+.button-close .arrow-place {
+  width: 50px;
+  height: 50px;
+  margin: 50px 50px;
+}
+
+/* PORTFOLIO DIV STYLE */
+
+/* SKILLS DIV STYLE */
+.skills-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 300;
+  width: 100%;
+  height: 980px;
+  transition: all ease-in 0.5s;
+  transform: translateY(980px);
+}
+.skills-div.active-skills {
+  transform: translateX(0);
+}
+
+/* SKILLS DIV STYLE */
+
+/* ABOUT DIV STYLE */
+.about-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 300;
+  width: 100%;
+  height: 980px;
+  transition: all ease-in 0.5s;
+  transform: translateX(1920px);
+}
+.about-div.active-about {
+  transform: translateX(0);
+}
+
+/* ABOUT DIV STYLE */
+
+/* CONTACT DIV STYLE */
+.contact-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 300;
+  width: 100%;
+  height: 980px;
+  transition: all ease-in 0.5s;
+  transform: translateY(-980px);
+}
+.contact-div.active-contact {
+  transform: translateX(0);
+}
+
+/* CONTACT DIV STYLE */
+
+.inside-portfolio {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inside-portfolio .head {
+  width: 200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inside-portfolio .head h1 {
+  width: 250px;
+  height: 60px;
+  font-size: 40px;
+  border-bottom: 3px solid white;
+  left: 0;
+}
+.inside-portfolio span {
+  color: #f6583b;
+  font-weight: 700;
+  font-size: 17px;
+  position: relative;
+  top: -12px;
+  left: 67px;
+  background: black;
+  padding: 0 25px;
+}
+
+.row-items {
+  width: 100%;
+  height: 900px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: -140px;
+  grid-template-columns: 300px 300px 300px;
+  align-content: center;
+  gap: 60px;
+}
+.row-items .item {
+  height: 250px;
+  background: white;
+}
+
+.portfolio-div a {
+  width: 150px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  background: #f6583b;
+  color: white;
+  position: relative;
+  left: 880px;
+  top: -120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0;
+}
+.div {
+  opacity: 0;
+  transition: all 2s;
+  transform: translateX(-50px);
+}
+.div.activediv {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.row {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+.row .contact-form {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: end;
+}
+.row .map {
+  width: 100%;
+  height: 500px;
+}
+.mapouter {
+  margin-left: 100px;
+}
+.form {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+  position: relative;
+  top: -15px;
+}
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+.horizontal label input {
+  width: 205px;
+}
+label {
+  margin:15px 20px;
+}
+label input { 
+  width: 450px;
+  height: 50px;
+  font-size: 17px;
+  background: #666666;
+  border: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 12px;
+}
+label textarea { 
+  width: 450px;
+  height: 200px;
+  font-size: 25px;
+  background: #666666;
+  border: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.btn { 
+  width: 450px;height: 50px;
+  margin-left: 20px;
+  font-size: 20px;
+  background: #f6583b;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
+}
+form span { 
+  color: white;
+}
+
+.contact-move {
+  opacity: 0;
+  transition: all 2s;
+  transform: translateY(-50px);
+  }
+  .contact-move.activecontact {
+  opacity: 1;
+  transform: translateY(0);
+}
